@@ -36,7 +36,7 @@ eval $(ssh-agent -s)
 ```shell
 ssh-add ~/.ssh/id_rsa
 ```
-## Copiar tu llave publica puedes usar editor vi
+## Copiar tu llave publica puedes usar editor cat
 
 ```shell
 cat ~/.ssh/id_rsa.pub
@@ -51,7 +51,11 @@ cat ~/.ssh/id_rsa.pub
 
 <img src="./images/imagen1.png" />
 
+## Copiar tu llave privada puedes usar editor cat
 
+```shell
+cat ~/.ssh/id_rsa
+```
 ```shell
 cd ~/.ssh/
 ssh -T git@github.com
