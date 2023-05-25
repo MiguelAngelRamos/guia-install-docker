@@ -1,4 +1,4 @@
-# PASOS PARA AGREGAR SSH a Jenkins para comunicarse con GITHUB
+# GUIA DE PASOS PARA AGREGAR SSH a Jenkins para comunicarse con GITHUB
 
 - Debemos Ingresar dentro de la imagen Jenkins y desde ahi crear las llaves
 
