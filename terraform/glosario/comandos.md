@@ -1,3 +1,4 @@
+## Comandos mas utilizados
 Las tres instrucciones (`terraform init`, `terraform plan`, `terraform apply`) son comandos básicos de Terraform, una herramienta para crear, cambiar y versionar infraestructura de manera segura y eficiente. En este caso, estás usando Terraform para gestionar recursos en AWS.
 
 
