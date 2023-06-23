@@ -27,9 +27,6 @@ En este ejemplo, usé `END_TEXT` en lugar de `EOF`, pero el efecto es el mismo.
 Un detalle adicional sobre el uso de `<<-` en lugar de `<<`: el `-` permite que las líneas del contenido del heredoc y la línea delimitadora final estén indentadas con tabulaciones o espacios. Esto puede ser útil para mantener tu código más legible si el heredoc está dentro de un bloque de código indentado.
 
 
-
-## ¿Que es T2 MICRO?
-
 ## ¿Que es t2.micro?
 
 El tipo de instancia "t2.micro" en Amazon EC2 determina tanto la cantidad de RAM como el número de núcleos de procesador que se asignarán a la instancia.
