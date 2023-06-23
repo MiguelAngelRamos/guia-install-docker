@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "us-east-2"
 }
 
 resource "aws_instance" "mi_servidor" {
-  ami = "ami-0f8e81a3da6e2510a"
+  ami = "ami-024e6efaf93d85776"
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.mi_grupo_de_seguridad.id]
   user_data = <<-EOF
               #!/bin/bash
-              echo "Kibernum academy!"> index.html
+              echo "Kibernum Academy Devops!"> index.html
               nohup busybox httpd -f -p 8080 &
               EOF
   tags = {
