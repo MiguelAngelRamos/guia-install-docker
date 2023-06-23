@@ -8,7 +8,7 @@ resource "aws_instance" "mi_servidor" {
   vpc_security_group_ids = [aws_security_group.mi_grupo_de_seguridad.id]
   user_data = <<-EOF
               #!/bin/bash
-              echo "Hola Terraformers!"> index.html
+              echo "Kibernum academy!"> index.html
               nohup busybox httpd -f -p 8080 &
               EOF
   tags = {
