@@ -35,3 +35,8 @@ cat ~/.aws/credentials
 ```sh
 terraform validate 
 ```
+
+## Comando para destruir todo
+```sh
+ terraform destroy
+```
