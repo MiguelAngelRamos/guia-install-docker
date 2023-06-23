@@ -30,3 +30,8 @@ Recuerda que para que este código funcione correctamente, necesitas tener confi
 ```sh
 cat ~/.aws/credentials
 ```
+
+## Comando para Validar nuestra Configuración
+```sh
+terraform validate 
+```
