@@ -62,7 +62,7 @@ En Amazon EC2, existen muchos otros tipos de instancias disponibles además de "
 
 Estos son solo algunos ejemplos, y existen muchos otros tipos de instancias con diversas configuraciones de recursos. Es importante evaluar tus necesidades de recursos, rendimiento y presupuesto para seleccionar el tipo de instancia más adecuado para tu caso específico. Puedes consultar la documentación oficial de AWS para obtener una lista completa de los tipos de instancias disponibles y sus características detalladas.
 
-## ¿Cuales son las instancias consideras en la capa gratuita?
+## ¿Cuales son las instancias en la capa gratuita?
 
 En cuanto a las instancias de Amazon EC2, la capa gratuita incluye los siguientes tipos de instancias:
 
