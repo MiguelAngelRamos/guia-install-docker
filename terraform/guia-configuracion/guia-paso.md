@@ -1,4 +1,4 @@
-## AMAZON (buscar IAM)
+## CREAR UN USUARIO IAM EN AMAZON (En la barra de busqueda escribe IAM)
 
 1. Seleccionar la parte de Usuario
 2. Crear un Usuario ( NO Selecciones la "Proporcione acceso de usuario a la consola de administración de AWS: opcional") -> Sig
