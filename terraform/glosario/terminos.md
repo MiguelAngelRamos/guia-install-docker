@@ -75,3 +75,19 @@ En cuanto a las instancias de Amazon EC2, la capa gratuita incluye los siguiente
 Es importante tener en cuenta que aunque estos tipos de instancias se incluyen en la capa gratuita durante el primer año, debes estar atento a los límites de uso gratuito establecidos por AWS. Si superas los límites de uso gratuito o utilizas servicios adicionales, es posible que se te cobren los costos normales.
 
 ***Te recomendaría verificar la documentación oficial de AWS para obtener los detalles más actualizados sobre los servicios y los límites de uso gratuito para evitar sorpresas inesperadas en cuanto a los costos.**
+
+## TERMINOS DE LOAD BALANCER 
+
+1. **DataSources de AWS**: Las DataSource de AWS en Terraform te permiten obtener datos de recursos existentes en AWS. 
+
+2. **Load Balancer**: El Load Balancer se usa para distribuir el tráfico de red entrante entre múltiples servidores para mejorar la disponibilidad y la robustez de las aplicaciones. 
+
+3. **Security Groups**: Los Security Groups en AWS actúan como un firewall virtual para tus instancias EC2, permitiéndote especificar reglas de tráfico permitidas tanto para tráfico entrante (ingress) como saliente (egress). 
+
+4. **AWS VPC**: La Virtual Private Cloud (VPC) te permite tener un control completo sobre tu entorno de red virtual en AWS.
+
+5. **Target Groups**: Los Target Groups se utilizan para enrutar solicitudes a uno o más servidores registrados (objetivos) utilizando el protocolo y el puerto que especificas.
+
+6. **Health Checks**: Los Health Checks se utilizan para comprobar la salud de los servidores registrados. 
+
+7. **Listener**: Un Listener es un proceso que comprueba las solicitudes de conexión de los clientes. 
