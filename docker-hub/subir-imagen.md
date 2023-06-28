@@ -31,3 +31,7 @@ docker pull mramoscli/fullstackdevops
 ```
 docker run -p 80:80 -p 8080:8080 --name runfullstack mramoscli/fullstackdevops
 ```
+
+## Compruebalo
+
+Ve al navegador al localhost y localhost:8080/api/students
