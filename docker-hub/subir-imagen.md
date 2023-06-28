@@ -15,6 +15,7 @@ Una vez que estás autenticado, puedes continuar con los siguientes pasos.
 ```bash
 docker tag 5507cb421bab mramoscli/fullstack:latest
 ```
+***nota el id debe ser el id de tu imagen "5507cb421bab" es solo un ejemplo reemplazo por el id de su propia imagen***
 
 2. Una vez etiquetada la imagen correctamente, puedes subirla a Docker Hub con el comando `docker push`. 
 
