@@ -13,5 +13,5 @@ COPY --from=build /app/dist/crudangular /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
-## By Ingnacio Seco
+## By Ignacio Seco
 ```
