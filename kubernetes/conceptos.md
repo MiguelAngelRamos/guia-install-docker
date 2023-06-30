@@ -50,10 +50,7 @@ Un Deployment es una forma de declarar el estado deseado para tus Pods en Kubern
 
 Un Service es una abstracción en Kubernetes que define un conjunto lógico de Pods y cómo acceder a ellos. Los Services permiten que tus aplicaciones sean descubiertas y proporcionan balanceo de carga entre Pods.
 
-# Conclusión
-
-Kubernetes es una herramienta poderosa para administrar y desplegar aplicaciones en contenedores. Aunque hay muchos conceptos para aprender, su flexibilidad y escalabilidad hacen que valga la pena el esfuerzo.
-
+## Kubectl 
 
 `kubectl` es la línea de comandos para interactuar con el servidor de Kubernetes. Permite a los desarrolladores administrar y controlar sus aplicaciones.
 
