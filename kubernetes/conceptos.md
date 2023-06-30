@@ -49,7 +49,7 @@ Un Deployment es una forma de declarar el estado deseado para tus Pods en Kubern
 
 Un Service es una abstracción en Kubernetes que define un conjunto lógico de Pods y cómo acceder a ellos. Los Services permiten que tus aplicaciones sean descubiertas y proporcionan balanceo de carga entre Pods.
 
-## Service
+## Adicional sobre los Service
 
 En Kubernetes, un Service es una abstracción que define un conjunto lógico de Pods y una política de acceso para ellos. Un Service permite exponer la conectividad a los Pods y proporciona una forma consistente de acceder a las aplicaciones en ejecución.
 
