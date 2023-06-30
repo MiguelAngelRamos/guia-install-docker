@@ -33,23 +33,6 @@ Un Secret es un objeto en Kubernetes que contiene datos sensibles, como contrase
 
 Kubernetes (también conocido como K8s) es una plataforma de código abierto para automatizar la implementación, el escalado y la gestión de aplicaciones en contenedores. 
 
-
-## kubectl
-
-`kubectl` es la línea de comandos para interactuar con el servidor de Kubernetes. Permite a los desarrolladores administrar y controlar sus aplicaciones.
-
-## Minikube
-
-Minikube es una herramienta que te permite ejecutar Kubernetes localmente. Es ideal para aprender y probar nuevas ideas y configuraciones antes de moverlas a producción.
-
-## Deployment
-
-Un Deployment es una forma de declarar el estado deseado para tus Pods en Kubernetes. El sistema se asegura de mantener el estado deseado, creando o eliminando Pods según sea necesario.
-
-## Service
-
-Un Service es una abstracción en Kubernetes que define un conjunto lógico de Pods y cómo acceder a ellos. Los Services permiten que tus aplicaciones sean descubiertas y proporcionan balanceo de carga entre Pods.
-
 ## Kubectl 
 
 `kubectl` es la línea de comandos para interactuar con el servidor de Kubernetes. Permite a los desarrolladores administrar y controlar sus aplicaciones.
