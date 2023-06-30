@@ -33,28 +33,6 @@ Un Secret es un objeto en Kubernetes que contiene datos sensibles, como contrase
 
 Kubernetes (también conocido como K8s) es una plataforma de código abierto para automatizar la implementación, el escalado y la gestión de aplicaciones en contenedores. 
 
-## ¿Para qué sirve Kubernetes?
-
-Kubernetes te permite:
-
-- Implementar aplicaciones de forma rápida y predecible.
-- Escalar tus aplicaciones en tiempo real.
-- Lanzar nuevas características sin interrupciones.
-- Aprovechar un ecosistema creciente de servicios y soporte.
-
-## Relación entre Kubernetes y Docker
-
-Docker es una plataforma que permite crear, implementar y gestionar contenedores. Por otro lado, Kubernetes es un sistema de orquestación que administra cómo esos contenedores interactúan y se escalan en un clúster.
-
-# Conceptos clave de Kubernetes
-
-## Pod
-
-Un Pod es la unidad más pequeña en Kubernetes. Representa un solo objeto en el clúster y puede contener uno o varios contenedores que comparten almacenamiento y red. 
-
-## Secret
-
-Un Secret es un objeto en Kubernetes que contiene datos sensibles, como contraseñas, tokens o claves. Los Secret protegen esa información y limitan su exposición.
 
 ## kubectl
 
