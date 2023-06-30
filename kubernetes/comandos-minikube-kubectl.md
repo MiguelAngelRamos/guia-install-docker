@@ -30,7 +30,7 @@ kubectl expose pod kfullstackapp --type=LoadBalancer --port=8080 --target-port=8
 kubectl get services
 ```
 ```sh
-  kubectl describe service 
+kubectl describe service 
 ```
 
 ## Obtener la url
@@ -38,3 +38,24 @@ kubectl get services
 minikube service --url kfullstackapp
 minikube service kfullstackapp --url
 ```
+
+### Para ver el estado del cluster
+```sh
+minikube status
+```
+## Si lo queremos detener
+
+```sh
+minikube stop
+```
+## Si lo queremos iniciar
+
+```sh
+minikube start
+```
+## Ejecutar el Dashboard
+
+```sh
+minikube dashboard --url
+```
+
