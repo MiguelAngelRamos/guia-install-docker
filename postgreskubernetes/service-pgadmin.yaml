@@ -1,0 +1,20 @@
+# La versión de la API
+apiVersion: v1
+# El tipo de recurso, en este caso Service
+kind: Service
+metadata:
+  # El nombre del servicio
+  name: pgadmin-service
+  labels:
+    # Etiqueta para identificar este servicio
+    app: pgadmin
+spec:
+  # Selector para determinar qué pods se incluirán en este servicio
+  selector:
+    app: pgadmin
+  # El tipo de servicio, en este caso NodePort que expone el servicio en un puerto estático del nodo
+  type: NodePort
+  ports:
+    # La configuración del puerto. El puerto 80 del servicio se expone como el puerto 30200 del nodo
+    - port: 80
+      nodePort: 30200

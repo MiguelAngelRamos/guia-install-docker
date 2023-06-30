@@ -1,0 +1,33 @@
+# La versión de la API
+apiVersion: apps/v1
+# El tipo de recurso, en este caso Deployment
+kind: Deployment
+metadata:
+  # El nombre del Deployment
+  name: pgadmin-deployment
+spec:
+  # Cómo el Deployment identifica los Pods que debe gestionar
+  selector:
+    matchLabels:
+      app: pgadmin
+  # Número de réplicas de Pods
+  replicas: 1
+  # Especificación de la plantilla del Pod
+  template:
+    metadata:
+      # Etiquetas para todos los Pods
+      labels:
+        app: pgadmin
+    spec:
+      containers:
+        - name: pgadmin4
+          # La imagen del contenedor que se utilizará
+          image: dpage/pgadmin4        
+          # Lee las variables de entorno del archivo secreto
+          envFrom:
+            - secretRef:
+                name: pgadmin-secret
+          # Abre el puerto para permitir enviar y recibir tráfico en el contenedor
+          ports:
+            - containerPort: 80
+              name: pgadminport

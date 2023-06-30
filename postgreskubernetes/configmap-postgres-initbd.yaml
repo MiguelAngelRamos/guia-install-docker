@@ -1,0 +1,22 @@
+# La versión de la API
+apiVersion: v1
+# El tipo de recurso, en este caso ConfigMap
+kind: ConfigMap
+metadata:
+  # El nombre del ConfigMap
+  name: postgres-init-script-configmap
+data:
+  # Un script de inicialización de la base de datos que se ejecutará cuando se inicie el servicio de Postgres
+  initdb.sh: |-
+    #!/bin/bash
+    # El script se detendrá si ocurre algún error
+    set -e
+    # Ejecuta una serie de comandos SQL en la base de datos especificada como usuario Postgres
+    psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+      # Crea un nuevo usuario 'devopsuser' con la contraseña 'academyjava'
+      CREATE USER devopsuser WITH PASSWORD 'academyjava';
+      # Crea una nueva base de datos 'bootcamp_db'
+      CREATE DATABASE bootcamp_db;
+      # Otorga todos los privilegios en la base de datos 'bootcamp_db' al usuario 'devopsuser'
+      GRANT ALL PRIVILEGES ON DATABASE bootcamp_db TO devopsuser;
+    EOSQL

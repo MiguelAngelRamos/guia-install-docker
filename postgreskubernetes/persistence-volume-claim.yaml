@@ -1,0 +1,16 @@
+# Un PersistentVolumeClaim (PVC) es una solicitud de recurso (volumen persistente) realizada por un pod, por ejemplo, el pod reclama un almacenamiento a través del PVC.
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: postgres-claim
+  labels:
+    app: postgres
+spec:
+  storageClassName: manual
+  # Modos de acceso al volumen, ReadWriteMany permite que varios pods lean y escriban en el volumen
+  accessModes:
+    - ReadWriteMany
+  resources:
+    # Solicita un almacenamiento específico para el PVC, en este caso, 2Gi (2 Gibibytes)
+    requests:
+      storage: 2Gi

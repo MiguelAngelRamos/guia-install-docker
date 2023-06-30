@@ -1,0 +1,22 @@
+# Un volumen persistente (PV) es un fragmento de almacenamiento que tiene un ciclo de vida independiente de los pods.
+# Estos preservan los datos a través de reinicios, reprogramaciones e incluso eliminaciones de pods.
+# PersistentVolumeClaim es una solicitud de almacenamiento por parte del usuario que puede ser satisfecha por el PV.
+kind: PersistentVolume
+# Versión de ApiServer en el nodo del panel de control (/api/v1). Se puede verificar utilizando 'kubectl api-versions'
+apiVersion: v1
+metadata:
+  name: postgres-volume
+  labels:
+    # Es un plugin que soporta muchos, como Amazon EBS, Azure Disk, etc. 'local' se refiere a dispositivos de almacenamiento locales montados en los nodos.
+    type: local
+    app: postgres
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5Gi
+    # Muchos pods programados en diferentes nodos pueden leer y escribir
+  accessModes:
+    - ReadWriteMany
+  # Este es el punto de montaje donde se va a almacenar la parte de la base de datos, es una ruta en el nodo del clúster
+  hostPath:
+    path: "/mnt/data/"

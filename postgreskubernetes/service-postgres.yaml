@@ -1,0 +1,26 @@
+# El tipo de recurso, en este caso Service
+kind: Service
+# La versión de la API
+apiVersion: v1
+metadata:
+  # El nombre del servicio
+  name: postgres-service
+  labels:
+    # Etiqueta para identificar este servicio
+    app: postgres
+spec:
+  # La dirección IP dentro del clúster para este servicio
+  clusterIP: 10.96.1.2
+  # La familia de protocolos de Internet para el servicio. En este caso, IPv4
+  ipFamilies:
+    - IPv4
+  ports:
+    # Nombre y configuración del puerto. El puerto 5432 del servicio se expone como el puerto 30432 del nodo
+    - name: postgres
+      port: 5432
+      nodePort : 30432 
+  # El tipo de servicio, en este caso NodePort que expone el servicio en un puerto estático del nodo
+  type: NodePort
+  # Selector para determinar qué pods se incluirán en este servicio
+  selector:
+    app: postgres
