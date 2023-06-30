@@ -15,11 +15,11 @@ Aquí, `--type=LoadBalancer` indica que deseamos crear un servicio de tipo LoadB
 
 ## Obtener los Pods
 ```sh
-  kubectl get pods
+kubectl get pods
 ```
 
 ```sh
-  kubectl describe pod "nombredelpod"
+kubectl describe pod "nombredelpod"
 ```
 
 ```sh
@@ -57,5 +57,11 @@ minikube start
 
 ```sh
 minikube dashboard --url
+```
+
+## Obtener la ip de Minikube
+
+```sh
+minikube ip
 ```
 
