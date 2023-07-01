@@ -26,18 +26,18 @@ Deberias ver las imagenes del docker engine de los kubernetes
 ## Luego generamos las imagenes
 
 Van a la carpeta de java
-3. 
+
 ```sh
 docker build -t devops-apirest:0.0.1 --build-arg JAR_FILE=devops-apirest-0.0.1-SNAPSHOT.jar .
 ```
 
 Van a la angular
-4. 
+
 ```sh
 docker build -t crudangular:0.0.1 .
 ```
 ## Vamos a la carpeta Kubernetes donde estan los yaml
-5. cd kubernetes y ejecutamos
+cd kubernetes y ejecutamos
    ```sh
     kubectl apply -f ./
    ```
