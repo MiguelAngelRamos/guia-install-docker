@@ -31,4 +31,6 @@ Van a la angular
 docker build -t crudangular:0.0.1 .
 ```
 5. cd kubernetes donde estan yaml
+   ```sh
     kubectl apply -f ./
+   ```
