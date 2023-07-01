@@ -45,4 +45,4 @@ Este comando descarga e instala las dependencias que falten.
 google-chrome-stable
 ```
 
-Por último, recuerda que ejecutar una interfaz gráfica de usuario en un servidor no es una práctica común y puede exponer tu servidor a ciertos riesgos de seguridad. Así que te sugeriría considerar si realmente necesitas tener un navegador web en tu servidor. esto solo hacemos con fines educativos.
+Por último, recuerda que ejecutar una interfaz gráfica de usuario en un servidor no es una práctica común y puede exponer tu servidor a ciertos riesgos de seguridad. Así que te sugeriría considerar si realmente necesitas tener un navegador web en tu servidor. esto solo lo hacemos con fines educativos. para tener una mejor comunicacion con minikube y el eco-sistema de kubernetes.
