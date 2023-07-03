@@ -14,12 +14,14 @@ export MINIKUBE_ACTIVE_DOCKERD="minikube"
 #eval $(minikube -p minikube docker-env)
 
 2. Ejecuta el siguiente comando
+
 ```sh
 eval $(minikube -p minikube docker-env)
 ```
 para verificar que docker engine de los kubernetes
+
 ```sh
-    docker images
+docker images
 ```
 Deberias ver las imagenes del docker engine de los kubernetes
 
@@ -38,6 +40,13 @@ docker build -t crudangular:0.0.1 .
 ```
 ## Vamos a la carpeta Kubernetes donde estan los yaml
 cd kubernetes y ejecutamos
-   ```sh
-    kubectl apply -f ./
-   ```
+
+```sh
+kubectl apply -f ./
+```
+
+## Comando para para destruir todo
+
+```sh
+kubectl delete -f ./
+```
