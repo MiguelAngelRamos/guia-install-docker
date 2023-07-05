@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-app-front-deployment
+spec:
+  selector:
+   matchLabels:
+    app: angular-app-front
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: angular-app-front
+    spec:
+      containers:
+        - name: angular-app-front
+          image: crudangular:0.0.3 
+          ports:
+            - containerPort: 80
+              name: angularappfport

@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+# api rest app backend service
+  apirestapp-back:
+    build:
+      context: ./java
+      args:
+        - JAR_FILE=*.jar
+    container_name: apirestApp-back
+    environment:
+      JAVA_OPTS: "-Xms256M -Xmx256M"
+    ports:
+      - 8080:8080
+# app frontend service angular
+  angularapp-front:
+    build:
+      context: ./angular
+    container_name: angularApp-front
+    depends_on:
+      - apirestapp-back
+    ports:
+      - 80:80

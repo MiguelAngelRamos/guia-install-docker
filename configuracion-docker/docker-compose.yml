@@ -1,0 +1,46 @@
+services:
+  jenkins:
+    restart: always
+    user: root
+    image: jenkins/docker
+    build:
+      context: dockerjenkins
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkinsdocker
+    volumes:
+      - /home/miguel/jenkins/jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - net
+  postgres:
+    image: postgres:14
+    networks:
+      - net
+    environment:
+      POSTGRES_USER: sonar
+      POSTGRES_PASSWORD: sonarpasswd
+    volumes:
+      - $PWD/postgres-data:/var/lib/postgresql/data
+  sonarqube:
+    image: sonarqube:lts
+    ports:
+      - 9000:9000
+      - 9092:9092
+    networks:
+      - net
+    environment:
+      SONARQUBE_JDBC_USERNAME: sonar
+      SONARQUBE_JDBC_PASSWORD: sonarpasswd
+      SONARQUBE_JDBC_URL: "jdbc:postgresql://postgres:5432/sonar"
+    depends_on:
+      - postgres
+  nexus:
+    image: sonatype/nexus3
+    ports:
+      - 8081:8081
+    networks:
+      - net
+networks:
+  net:

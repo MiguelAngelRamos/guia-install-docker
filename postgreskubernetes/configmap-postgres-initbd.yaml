@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-init-script-configmap
+data:
+  initdb.sh: |-
+    #!/bin/bash
+    set -e
+    echo "Iniciando script para creación de usuario y base de datos..."
+
+    psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+      CREATE USER devopsuser WITH PASSWORD 'academyjava';
+      CREATE DATABASE bootcamp;
+      GRANT ALL PRIVILEGES ON DATABASE bootcamp TO devopsuser;
+    EOSQL
+
+    echo "Script finalizado."

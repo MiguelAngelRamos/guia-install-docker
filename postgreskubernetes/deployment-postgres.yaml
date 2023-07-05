@@ -1,0 +1,50 @@
+# La versión de la API
+apiVersion: apps/v1
+# El tipo de recurso, en este caso Deployment
+kind: Deployment
+metadata:
+  # El nombre del Deployment
+  name: postgres-deployment
+  labels:
+    # Etiqueta para identificar este Deployment
+    app: postgres
+spec:
+  # Número de réplicas de Pods
+  replicas: 1
+  # Define cómo el Deployment identifica los Pods que puede manejar
+  selector: 
+    matchLabels:
+      app: postgres
+  # Especificación de la plantilla del Pod
+  template:
+    metadata:
+      # Define las etiquetas para todos los Pods
+      labels:
+        app: postgres       
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:latest
+          # Política de descarga de la imagen del contenedor
+          imagePullPolicy: IfNotPresent
+          # Abre el puerto para permitir enviar y recibir tráfico en el contenedor
+          ports:
+            - containerPort: 5432
+          # Lee las variables de entorno del archivo secreto
+          envFrom:
+            - secretRef:
+                name: postgres-secret
+          volumeMounts:
+            # Este es el camino en el contenedor en el que se realizará el montaje.
+            - mountPath: /var/lib/postgresql/data
+              name: postgredb
+            - mountPath: /docker-entrypoint-initdb.d
+              name : init-script
+      volumes:
+        # Define los volúmenes que se utilizarán en los contenedores, uno desde una reclamación de volumen persistente y otro desde un ConfigMap
+        - name: postgredb
+          persistentVolumeClaim:
+            claimName: postgres-claim
+        - name: init-script
+          configMap:
+             name: postgres-init-script-configmap

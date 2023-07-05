@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: spring-app-back-service
+  labels:
+    app: spring-app-back
+spec:   
+  ports:
+  - name: spring-app-back
+    port: 7080
+    nodePort : 30780 
+  #type: LoadBalancer
+  type: NodePort
+  selector:
+   app: spring-app-back
