@@ -47,7 +47,7 @@ cat ~/.ssh/id_rsa.pub
 
 - Vamos a Jenkins "Manage Jenkins" -> "Credentials"
 
-<img src="./images/imagen1.png" />
+<img src="../images/imagen1.png" />
 
 ## Copiar tu llave privada puedes usar editor cat
 
