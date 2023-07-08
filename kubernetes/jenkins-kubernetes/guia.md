@@ -48,10 +48,7 @@ kubectl version --output=json --client
 kubectl version --output=yaml --client
 ```
 
-
-# Salimos del minikube
-
-Y vamos a comprobar las redes que tenemos 
+## Vamos a comprobar las redes que tenemos 
 
 ```sh
 docker network ls
