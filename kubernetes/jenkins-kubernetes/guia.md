@@ -1,9 +1,11 @@
 Kubernetes
 ==========
-
+```sh
 minikube start
+```
+```sh
 docker exec -it --user=root jenkinsdocker /bin/bash
-
+```
 
 Debemos instalar 
 
