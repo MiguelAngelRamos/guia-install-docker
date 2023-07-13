@@ -1,7 +1,5 @@
 1. Lo primero que vamos hacer es crear un repositorio en local para subirlo a github con los archivos.
 
-
-
 Una cuenta para poder generar un token (con roles) y acceder desde jenkins al cluster de kubernetes
 
 jenkins-account.yaml "lo debemos aplicar al cluster de kubernetes"
@@ -17,7 +15,7 @@ Ver la configuracion de nuestro cluster
 kubectl config view
 ```
 
-aqui nos interve la url del server
+aqui nos interesa la url del server
 
 server: https://192.168.49.2:8443 (con esta dirección es como vamos acceder desde jenkins)
 
