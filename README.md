@@ -7,7 +7,7 @@ Este es el repositorio principal del Bootcamp de DevOps realizado por Kibernum A
 ## Índice
 ### Docker 
 - [Instalación de Docker - Ubuntu](guia.md)
-- [Comandos básicos - Ubuntu](comandos.md)
+- [Comandos básicos - Docker](comandos.md)
 
 ## Jenkins
 - [Instalar todo eco-sistema (jenkins, sonarqube, postgres, nexus)](./configuracion-docker)
