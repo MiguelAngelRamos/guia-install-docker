@@ -33,3 +33,23 @@ kubectl version --output=json --client
 ```sh
 kubectl version --output=yaml --client
 ```
+
+# Instalacion de MiniKube
+
+```sh
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
+  && chmod +x minikube
+```
+
+```sh 
+sudo mkdir -p /usr/local/bin/
+sudo install minikube /usr/local/bin/
+```
+```sh
+minikube start
+```
+
+## levantar el dashboard
+```sh
+minikube dashboard --url
+```
