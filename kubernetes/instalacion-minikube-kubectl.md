@@ -48,7 +48,6 @@ sudo install minikube /usr/local/bin/
 ```sh
 minikube start
 ```
-
 ## levantar el dashboard
 ```sh
 minikube dashboard --url
