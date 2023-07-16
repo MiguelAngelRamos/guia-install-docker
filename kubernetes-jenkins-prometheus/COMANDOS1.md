@@ -65,6 +65,7 @@ Recuerda, el comando `kubectl apply` o `kubectl create` va a crear los recursos 
 
 Hay que tener en consideracion los pasos que se realizaron en jenkins para poder realizar la integracion con kubernetes
 
+Debemos instalar el plugin "kubernetes" **KubernetesVersion 3971.v94b_4c914ca_75**
 
 Lo primero es crear una credencial
 

@@ -28,7 +28,7 @@ chmod +x ./kubectl
 ## Vamos a moverlo de donde lo descargamos
 
 ```sh
-sudo mv ./kubectl /usr/local/bin/kubectl
+mv ./kubectl /usr/local/bin/kubectl
 ```
 
 ## Version

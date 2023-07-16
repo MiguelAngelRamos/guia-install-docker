@@ -25,9 +25,9 @@ RUN apt-get update && \
 
 # Agregar Maven
 RUN rm -rf /opt/maven && \
-    curl -O https://downloads.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz && \
-    tar xzvf apache-maven-3.9.2-bin.tar.gz && \
-    mv apache-maven-3.9.2 /opt/mavenc
+    curl -O https://dlcdn.apache.org/maven/maven-3/3.9.3/binaries/apache-maven-3.9.3-bin.tar.gz && \
+    tar xzvf apache-maven-3.9.3-bin.tar.gz && \
+    mv apache-maven-3.9.3 /opt/maven
 ENV M2_HOME=/opt/maven
 ENV PATH=${M2_HOME}/bin:${PATH}
 
