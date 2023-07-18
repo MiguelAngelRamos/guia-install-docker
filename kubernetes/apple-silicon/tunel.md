@@ -12,7 +12,7 @@ Este comando te dará la URL con la que puedes acceder a tu servicio. Este coman
 
 `minikube tunnel` crea un túnel desde tu máquina local hasta el cluster de Kubernetes. Este comando debe ser ejecutado en una terminal separada y mantenerse en ejecución para que el túnel esté abierto. 
 
-Entonces, para tu caso, podrías probar los siguientes pasos:
+Entonces, pruebe los siguientes pasos:
 
 1. Ejecuta `minikube service proyectdevops-fullstack-jenkins-service --url` para obtener la URL del servicio.
 2. Abre una nueva terminal y ejecuta `minikube tunnel`.
