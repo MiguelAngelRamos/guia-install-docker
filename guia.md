@@ -99,7 +99,8 @@ To create the docker group and add your user:
 sudo usermod -aG docker $USER
 ```
 ### Rotacion de logs https://docs.docker.com/config/containers/logging/local/
-    Modificar la configuracion de docker engine en los logs por que se generan mucho hay que controlar la rotacion para no tener problema de almacenamiento que se llene el disco de logs.
+
+Modificar la configuracion de docker engine en los logs por que se generan mucho hay que controlar la rotacion para no tener problema de almacenamiento que se llene el disco de logs.
 
 con el comando (si no tienes el archivo se va a crear)
 
