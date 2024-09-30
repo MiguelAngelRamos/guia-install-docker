@@ -38,5 +38,5 @@ docker rm <nombre o ID del contenedor>
 
 ```shell
 docker image ls
-docker image rm <nombre o ID del contenedor>
+docker image rm <nombre o ID de la imagen>
 ```
