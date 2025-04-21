@@ -127,5 +127,3 @@ Ver los contenedores en cualquier estado
 docker ps -a 
 ```
 
-dckr_pat_J1SRHL3xx
-Ua93VmSwYEykMifYow
