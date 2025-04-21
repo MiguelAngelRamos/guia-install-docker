@@ -1,4 +1,4 @@
-Claro, aquí tienes la guía actualizada con los pasos para:
+Comandos Docker
 
 1. Crear un contenedor.
 2. Crear una imagen desde un Dockerfile.
